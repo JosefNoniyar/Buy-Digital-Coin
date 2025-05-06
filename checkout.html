@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Checkout</h1>
+        <div id="checkout-details"></div>
+        <form id="user-details-form">
+            <h3>Enter Your Details</h3>
+            <input type="text" id="first-name" placeholder="First Name" required maxlength="25">
+            <input type="text" id="last-name" placeholder="Last Name" required maxlength="25">
+            <input type="tel" id="mobile" placeholder="Mobile Number" required onblur="validateMobile()">
+            <input type="email" id="email" placeholder="Email Address" required maxlength="50" onblur="validateEmail()">
+            <input type="number" id="age" placeholder="Age" required maxlength="2">
+            <select id="gender" required>
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="country" placeholder="Country" required maxlength="25">
+            <input type="text" id="state" placeholder="State" required maxlength="25">
+            <input type="text" id="address-line-1" placeholder="Address Line 1" required maxlength="50">
+            <input type="text" id="address-line-2" placeholder="Address Line 2" maxlength="50">
+            <button type="button" onclick="proceedPayment()">Proceed To Payment</button>
+        </form>
+        <div id="payment-methods" style="display: none;">
+            <h2>Choose Payment Method</h2>
+            <button onclick="generateQRCode()">📷 QR Code</button>
+            <button onclick="openUPIApp()">📱 UPI App</button>
+        </div>
+        <div id="payment-output"></div>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>

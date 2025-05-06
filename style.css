@@ -1,0 +1,165 @@
+/* === Global Styles === */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Heading */
+h1 {
+    color: #00ffff;
+    font-size: 28px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+/* === Coin Plan Boxes === */
+.coin-box {
+    background: #252525;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.coin-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+.coin-box h3 {
+    color: #00ffcc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.extra-coins {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* === Buttons === */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* === Popular Plan Tag === */
+.popular-plan {
+    border: 2px solid #ffcc00;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+.popular-tag {
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 5px rgba(255, 204, 0, 0.8); }
+    to { box-shadow: 0 0 15px rgba(255, 204, 0, 1); }
+}
+
+/* === Form Section (Improved) === */
+#user-details-form {
+    background-color: rgb(30, 30, 30);
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.4);
+    max-width: 600px;
+    width: 90%;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+}
+
+#user-details-form h3 {
+    color: #00ffff;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-shadow: 0 0 6px #00ffff;
+}
+
+#user-details-form input,
+#user-details-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 17px;
+    box-shadow: 0 0 6px rgba(0, 255, 255, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#user-details-form input:focus,
+#user-details-form select:focus {
+    outline: none;
+    background-color: #333;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+#user-details-form button {
+    margin-top: 20px;
+    background-color: #00ffff;
+    color: #121212;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#user-details-form button:hover {
+    background-color: #00cccc;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
